@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// script locking camera to player object
 public class CameraController : MonoBehaviour {
 
 	//references player object
