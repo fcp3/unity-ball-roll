@@ -29,4 +29,12 @@ public class Movement : MonoBehaviour {
 		rb.AddForce (movement * speed);
 	}
 
+	// used to consume the pickups
+	void OnTriggerEnter (Collider other) {
+		
+		if (other.gameObject.CompareTag("PickUp"))
+			other.gameObject.SetActive(false);
+
+	}
+
 }
