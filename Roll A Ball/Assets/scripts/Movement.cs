@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
+	// Creates a Rigidbody object to get component of object
 	private Rigidbody rb;
+	// Variable that can be changed in Unity Engine
 	public float speed;
 
 	// Use this for initialization
@@ -17,6 +19,7 @@ public class Movement : MonoBehaviour {
 		
 	}
 
+	// Used for physics of object
 	void FixedUpdate () {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
